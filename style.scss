@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+div.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  div.container-left {
+    background: url(./assets/background-image.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 16px 32px;
+
+    h1 {
+      color: limegreen;
+    }
+  }
+
+  div.container-right {
+    padding: 32px;
+    padding-top: 10vh;
+    h1,
+    p {
+      margin-bottom: 32px;
+    }
+
+    form {
+      div.form-input-line {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 16px;
+        column-gap: 32px;
+
+        div.input-container {
+          label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 14px;
+            color: #777;
+          }
+
+          input {
+            padding: 16px;
+            border: 2px solid #eee;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 1em;
+            background: #eee;
+            &:hover,
+            &:focus {
+              border: 2px solid limegreen;
+              background: #fff;
+            }
+          }
+        }
+      }
+
+      div.button-container {
+        button.btn {
+          padding: 1em 2.5em;
+          background: limegreen;
+          color: #fff;
+          border-radius: 10px;
+          font-weight: bold;
+          font-size: 1em;
+          cursor: pointer;
+
+          &:hover {
+            background: transparent;
+            color: #666;
+            border: 2px solid limegreen;
+          }
+        }
+      }
+    }
+  }
+}
